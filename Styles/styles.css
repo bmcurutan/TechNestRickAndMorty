@@ -1,0 +1,100 @@
+body {
+  font-family: Arial;
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+a:hover .card  {
+  background-color: #69c8ec;
+}
+
+.card.full {
+  max-width: 400px;
+  margin: 24px;
+}
+
+h1 {
+  color: #69c8ec;
+  margin: 24px 0;
+}
+
+h2 {
+  color: #69c8ec;
+  text-align: center;
+}
+
+h3 {
+  color: #24325f;
+}
+
+ul {
+  color: #24325f;
+}
+
+a { 
+  text-decoration: none;
+}
+
+.parent {
+  max-width: 1000px;
+  display: flex; /* Aligns the children items in a row direction */
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px; /* Adds space between child elements */
+}
+
+.child {
+  display: flex;
+  width: 400px;
+  gap: 24px;
+  padding: 24px;
+}
+
+.child img {
+  width: 100px;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 0 24px;
+  }
+
+  .child {
+    width: 300px;
+  }
+}
+
+#search_bar {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 0 0 24px;
+  width: 300px;
+}
+
+.pagination {
+  margin: 0 0 24px;
+}
+
+.pagination a {
+  padding: 8px;
+  border: 1px solid #ccc;
+  background-color: #24325f;
+  color: #fff;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.pagination a:hover {
+  background-color: #69c8ec;
+  color: #24325f;
+}
